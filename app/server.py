@@ -9,8 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1LpUMBMx26m943O9OnEYIJsS1HK0GqTLo'
-export_file_name = 'RS50stage-1.pth'
+export_file_url = 'https://drive.google.com/uc?export=download&id=11wbhWUDvvuYIhRGgC-auQozczC_CojIi'
+export_file_name = 'RS50stage-2.pth'
 
 classes = ['cats', 'dogs']
 path = Path(__file__).parent
