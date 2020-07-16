@@ -9,12 +9,12 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1liAaoaUOhBpmnevywYhZC04PGV0UNThT'
-export_file_name = 'res50_unet_8th_ind.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1A36XqrTTwQ2L-xQUXhA2MHzVpkZJ92Pm'
+export_file_name = 'clouds.pkl'
 
-classes = ['cats', 'dogs']
+classes = ['Cirrus','Cirrocumulus','Cirrostratus','Altocumulus','Altostratus','Nimbostratus','Stratocumulus','Stratus','Cumulus','Cumulonimbus']
+
 path = Path(__file__).parent
-
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
 app.mount('/static', StaticFiles(directory='app/static'))
